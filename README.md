@@ -1,4 +1,4 @@
-# IntelSearch RAG
+# OpsIntel RAG Console
 
 A portfolio-grade Retrieval-Augmented Generation (RAG) project built with Python + Flask.
 
