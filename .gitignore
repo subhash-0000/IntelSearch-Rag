@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.pytest_cache/
+.DS_Store
+
+# Generated indices and runtime logs
+data/index/*
+!data/index/.gitkeep
+feedback/*.jsonl
