@@ -4,16 +4,21 @@ A portfolio-grade Retrieval-Augmented Generation (RAG) project built with Python
 
 This app solves a practical problem: helping teams query scattered internal policy and operations docs with grounded answers, ranked evidence, and feedback logging.
 
-## Why this is showcase-worthy
+## What this solves
 
-- Hybrid retrieval pipeline: dense vector search (FAISS) + sparse BM25 scoring.
-- Reranking stage for better evidence precision.
+- Helps teams query scattered internal policy and operations docs with grounded answers, ranked evidence, and feedback logging.
+- Supports domain filtering for engineering, security, HR, and policy docs.
+- Includes a re-index endpoint for document refresh.
+- Captures feedback for continuous quality loops.
+
+## What we use
+
+- Python + Flask for the web app.
+- Hybrid retrieval with dense vector search (FAISS) and sparse BM25 scoring.
+- A reranking stage for better evidence precision.
 - Grounded responses with source citations and confidence-like scores.
-- Domain filtering (engineering, security, HR, policy).
-- Re-index endpoint for document refresh.
-- Feedback capture endpoint for continuous quality loops.
-- Retrieval evaluation script with Recall@K and MRR.
-- Modern non-boilerplate UI designed for demos.
+- A retrieval evaluation script with Recall@K and MRR.
+- A modern non-boilerplate UI.
 
 ## Architecture
 
@@ -90,7 +95,7 @@ python run.py
   - body: `{"request_id":"...", "rating": 5, "note":"helpful"}`
 - `GET /api/health`
 
-## Demo ideas for interviews
+## Example scenarios
 
 - Ask an incident escalation question and show grounded citations.
 - Toggle domain filters and compare retrieval behavior.
